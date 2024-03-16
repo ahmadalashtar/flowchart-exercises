@@ -4,15 +4,18 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="ahmad"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2024-03-16 09:38:43 pm"/>
+        <attribute name="saved" value="2024-03-16 09:52:45 pm"/>
         <attribute name="created" value="YWhtYWQ7QUhNQURQQzsyMDI0LTAzLTE2OzA3OjA2OjE4IHBtOzIzNDk="/>
-        <attribute name="edited" value="YWhtYWQ7QUhNQURQQzsyMDI0LTAzLTE2OzA5OjM4OjQzIHBtOzM7MjQ2NA=="/>
+        <attribute name="edited" value="YWhtYWQ7QUhNQURQQzsyMDI0LTAzLTE2OzA5OjUyOjQ1IHBtOzQ7MjQ2Mw=="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
             <declare name="n" type="Integer" array="False" size=""/>
             <input variable="n"/>
+            <while expression="n &lt; 0">
+                <input variable="n"/>
+            </while>
             <declare name="count" type="Integer" array="False" size=""/>
             <assign variable="count" expression="0"/>
             <while expression="count &lt;= n">
