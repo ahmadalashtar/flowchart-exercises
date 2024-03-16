@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ahmad"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-16 10:18:53 pm"/>
+        <attribute name="created" value="YWhtYWQ7QUhNQURQQzsyMDI0LTAzLTE2OzA5OjU5OjI2IHBtOzIzNTg="/>
+        <attribute name="edited" value="YWhtYWQ7QUhNQURQQzsyMDI0LTAzLTE2OzEwOjE4OjUzIHBtOzQ7MjQ1Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Please enter your name:&quot;" newline="True"/>
+            <declare name="name" type="String" array="False" size=""/>
+            <input variable="name"/>
+            <output expression="&quot;Print it how many times?&quot;" newline="True"/>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <while expression="n &lt; 0">
+                <output expression="&quot;Number should be positive, try again:&quot;" newline="True"/>
+                <input variable="n"/>
+            </while>
+            <while expression="n &gt; 0">
+                <output expression="name" newline="True"/>
+                <assign variable="n" expression="n - 1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
