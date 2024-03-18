@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ahmad"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-19 12:37:02 am"/>
+        <attribute name="created" value="YWhtYWQ7QUhNQURQQzsyMDI0LTAzLTE5OzEyOjMwOjU5IGFtOzIzMzU="/>
+        <attribute name="edited" value="YWhtYWQ7QUhNQURQQzsyMDI0LTAzLTE5OzEyOjM3OjAyIGFtOzE7MjQzOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1" type="Integer" array="False" size=""/>
+            <input variable="num1"/>
+            <declare name="num2" type="Integer" array="False" size=""/>
+            <input variable="num2"/>
+            <declare name="diff1" type="Integer" array="False" size=""/>
+            <assign variable="diff1" expression="abs(100-num1)"/>
+            <declare name="diff2" type="Integer" array="False" size=""/>
+            <assign variable="diff2" expression="abs(100-num2)"/>
+            <if expression="diff1 &lt; diff2">
+                <then>
+                    <output expression="num2" newline="True"/>
+                </then>
+                <else>
+                    <if expression="diff2 &lt; diff1">
+                        <then>
+                            <output expression="num1" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;same distance&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
