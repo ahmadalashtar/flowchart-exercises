@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ahmad"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-20 10:22:32 am"/>
+        <attribute name="created" value="YWhtYWQ7QUhNQURQQzsyMDI0LTAzLTIwOzEwOjA5OjE5IGFtOzIzMjc="/>
+        <attribute name="edited" value="YWhtYWQ7QUhNQURQQzsyMDI0LTAzLTIwOzEwOjIyOjMyIGFtOzI7MjQyNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="base" type="Integer" array="False" size=""/>
+            <input variable="base"/>
+            <declare name="exp" type="Integer" array="False" size=""/>
+            <input variable="exp"/>
+            <while expression="exp &lt; 0">
+                <input variable="exp"/>
+            </while>
+            <declare name="pow" type="Integer" array="False" size=""/>
+            <assign variable="pow" expression="1"/>
+            <while expression="exp &gt; 0">
+                <assign variable="pow" expression="pow * base"/>
+                <assign variable="exp" expression="exp - 1"/>
+            </while>
+            <output expression="pow" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
