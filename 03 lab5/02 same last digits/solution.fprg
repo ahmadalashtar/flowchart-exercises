@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ahmad"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-20 09:59:10 am"/>
+        <attribute name="created" value="YWhtYWQ7QUhNQURQQzsyMDI0LTAzLTIwOzA5OjUzOjQzIGFtOzIzMzE="/>
+        <attribute name="edited" value="YWhtYWQ7QUhNQURQQzsyMDI0LTAzLTIwOzA5OjU5OjEwIGFtOzE7MjQzOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <call expression="Start"/>
+        </body>
+    </function>
+    <function name="Start" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1" type="Integer" array="False" size=""/>
+            <input variable="num1"/>
+            <declare name="num2" type="Integer" array="False" size=""/>
+            <input variable="num2"/>
+            <declare name="rem1" type="Integer" array="False" size=""/>
+            <assign variable="rem1" expression="num1 % 10"/>
+            <declare name="rem2" type="Integer" array="False" size=""/>
+            <assign variable="rem2" expression="num2 % 10"/>
+            <if expression="rem1 = rem2">
+                <then>
+                    <output expression="&quot;Same last digit&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Different last digit&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
