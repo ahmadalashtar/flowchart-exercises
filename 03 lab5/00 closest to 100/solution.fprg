@@ -4,9 +4,9 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="ahmad"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2024-03-19 12:37:02 am"/>
+        <attribute name="saved" value="2024-03-20 11:13:03 am"/>
         <attribute name="created" value="YWhtYWQ7QUhNQURQQzsyMDI0LTAzLTE5OzEyOjMwOjU5IGFtOzIzMzU="/>
-        <attribute name="edited" value="YWhtYWQ7QUhNQURQQzsyMDI0LTAzLTE5OzEyOjM3OjAyIGFtOzE7MjQzOA=="/>
+        <attribute name="edited" value="YWhtYWQ7QUhNQURQQzsyMDI0LTAzLTIwOzExOjEzOjAzIGFtOzI7MjQyNQ=="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -21,12 +21,12 @@
             <assign variable="diff2" expression="abs(100-num2)"/>
             <if expression="diff1 &lt; diff2">
                 <then>
-                    <output expression="num2" newline="True"/>
+                    <output expression="num1" newline="True"/>
                 </then>
                 <else>
                     <if expression="diff2 &lt; diff1">
                         <then>
-                            <output expression="num1" newline="True"/>
+                            <output expression="num2" newline="True"/>
                         </then>
                         <else>
                             <output expression="&quot;same distance&quot;" newline="True"/>
