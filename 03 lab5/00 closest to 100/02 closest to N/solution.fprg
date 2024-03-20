@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ahmad"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-20 11:31:08 am"/>
+        <attribute name="created" value="YWhtYWQ7QUhNQURQQzsyMDI0LTAzLTE5OzEyOjMwOjU5IGFtOzIzMzU="/>
+        <attribute name="edited" value="YWhtYWQ7QUhNQURQQzsyMDI0LTAzLTIwOzExOjMxOjA4IGFtOzM7MjQzMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Enter a number:&quot;" newline="True"/>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <output expression="&quot;Enter a number to check the distance:&quot;" newline="True"/>
+            <declare name="num1" type="Integer" array="False" size=""/>
+            <input variable="num1"/>
+            <output expression="&quot;Enter a second number to compare against:&quot;" newline="True"/>
+            <declare name="num2" type="Integer" array="False" size=""/>
+            <input variable="num2"/>
+            <declare name="diff1" type="Integer" array="False" size=""/>
+            <assign variable="diff1" expression="abs(n-num1)"/>
+            <declare name="diff2" type="Integer" array="False" size=""/>
+            <assign variable="diff2" expression="abs(n-num2)"/>
+            <if expression="diff1 &lt; diff2">
+                <then>
+                    <output expression="num1" newline="True"/>
+                </then>
+                <else>
+                    <if expression="diff2 &lt; diff1">
+                        <then>
+                            <output expression="num2" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;same distance&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
