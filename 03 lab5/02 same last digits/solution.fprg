@@ -4,14 +4,26 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="ahmad"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2024-03-20 09:59:10 am"/>
+        <attribute name="saved" value="2024-03-20 11:23:29 am"/>
         <attribute name="created" value="YWhtYWQ7QUhNQURQQzsyMDI0LTAzLTIwOzA5OjUzOjQzIGFtOzIzMzE="/>
-        <attribute name="edited" value="YWhtYWQ7QUhNQURQQzsyMDI0LTAzLTIwOzA5OjU5OjEwIGFtOzE7MjQzOQ=="/>
+        <attribute name="edited" value="YWhtYWQ7QUhNQURQQzsyMDI0LTAzLTIwOzExOjIzOjI5IGFtOzI7MjQzNA=="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
             <call expression="Start"/>
+        </body>
+    </function>
+    <function name="Modulo" type="Integer" variable="answer">
+        <parameters>
+            <parameter name="dividend" type="Integer" array="False"/>
+            <parameter name="divisor" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="answer" type="Integer" array="False" size=""/>
+            <declare name="quotient" type="Integer" array="False" size=""/>
+            <assign variable="quotient" expression="dividend / divisor"/>
+            <assign variable="answer" expression="dividend - quotient*divisor"/>
         </body>
     </function>
     <function name="Start" type="None" variable="">
@@ -22,9 +34,9 @@
             <declare name="num2" type="Integer" array="False" size=""/>
             <input variable="num2"/>
             <declare name="rem1" type="Integer" array="False" size=""/>
-            <assign variable="rem1" expression="num1 % 10"/>
+            <assign variable="rem1" expression="Modulo(num1, 10)"/>
             <declare name="rem2" type="Integer" array="False" size=""/>
-            <assign variable="rem2" expression="num2 % 10"/>
+            <assign variable="rem2" expression="Modulo(num2, 10)"/>
             <if expression="rem1 = rem2">
                 <then>
                     <output expression="&quot;Same last digit&quot;" newline="True"/>
