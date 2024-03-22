@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ahmad"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-23 01:54:57 am"/>
+        <attribute name="created" value="YWhtYWQ7QUhNQURQQzsyMDI0LTAzLTIzOzAxOjQwOjQ4IGFtOzIzMjc="/>
+        <attribute name="edited" value="YWhtYWQ7QUhNQURQQzsyMDI0LTAzLTIzOzAxOjU0OjU3IGFtOzI7MjQ0MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="number" type="Integer" array="False" size=""/>
+            <declare name="divisor" type="Integer" array="False" size=""/>
+            <input variable="number"/>
+            <assign variable="divisor" expression="2"/>
+            <if expression="number &lt; 2">
+                <then/>
+                <else>
+                    <while expression="divisor &lt; number">
+                        <if expression="number % divisor != 0">
+                            <then/>
+                            <else>
+                                <assign variable="divisor" expression="number"/>
+                            </else>
+                        </if>
+                        <assign variable="divisor" expression="divisor + 1"/>
+                    </while>
+                </else>
+            </if>
+            <if expression="divisor = number">
+                <then>
+                    <output expression="&quot;prime&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;not prime&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
