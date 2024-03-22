@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ahmad"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-23 02:48:54 am"/>
+        <attribute name="created" value="YWhtYWQ7QUhNQURQQzsyMDI0LTAzLTIzOzAyOjQ1OjM3IGFtOzIzMzE="/>
+        <attribute name="edited" value="YWhtYWQ7QUhNQURQQzsyMDI0LTAzLTIzOzAyOjQ4OjU0IGFtOzE7MjQ0MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="number" type="Integer" array="False" size=""/>
+            <output expression="&quot;Please, insert a number:&quot;" newline="True"/>
+            <input variable="number"/>
+            <output expression="&quot;The number your inserted is: &quot; &amp; number" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
