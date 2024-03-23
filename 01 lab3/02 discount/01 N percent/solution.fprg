@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ahmad"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-23 01:04:08 pm"/>
+        <attribute name="created" value="YWhtYWQ7QUhNQURQQzsyMDI0LTAzLTIzOzEyOjIyOjM1IHBtOzIzNDA="/>
+        <attribute name="edited" value="YWhtYWQ7QUhNQURQQzsyMDI0LTAzLTIzOzAxOjA0OjA4IHBtOzI7MjQ0Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="price" type="Integer" array="False" size=""/>
+            <declare name="discount" type="Integer" array="False" size=""/>
+            <declare name="discPer" type="Integer" array="False" size=""/>
+            <output expression="&quot;How much is the price of the product: &quot;" newline="True"/>
+            <input variable="price"/>
+            <output expression="&quot;How much is the discount, in percentage: &quot;" newline="True"/>
+            <input variable="discPer"/>
+            <assign variable="discount" expression="price*discPer/100"/>
+            <assign variable="price" expression="price - discount"/>
+            <output expression="&quot;Price after the 20% discount: &quot; &amp; price" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
