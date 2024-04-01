@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ahmad"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-04-01 04:05:03 pm"/>
+        <attribute name="created" value="YWhtYWQ7QUhNQURQQzsyMDI0LTA0LTAxOzAzOjU0OjE5IHBtOzIzNDQ="/>
+        <attribute name="edited" value="YWhtYWQ7QUhNQURQQzsyMDI0LTA0LTAxOzA0OjA1OjAzIHBtOzE7MjQ0Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1" type="Integer" array="False" size=""/>
+            <declare name="num2" type="Integer" array="False" size=""/>
+            <declare name="divisor" type="Integer" array="False" size=""/>
+            <declare name="gcd" type="Integer" array="False" size=""/>
+            <declare name="mod1" type="Integer" array="False" size=""/>
+            <declare name="mod2" type="Integer" array="False" size=""/>
+            <input variable="num1"/>
+            <input variable="num2"/>
+            <assign variable="divisor" expression="1"/>
+            <assign variable="gcd" expression="1"/>
+            <while expression="divisor &lt;= num1 &amp;&amp; divisor &lt;= num2">
+                <assign variable="mod1" expression="num1%divisor"/>
+                <assign variable="mod2" expression="num2%divisor"/>
+                <if expression="mod1== 0 &amp;&amp; mod2 == 0">
+                    <then>
+                        <assign variable="gcd" expression="divisor"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="divisor" expression="divisor + 1"/>
+            </while>
+            <output expression="gcd" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

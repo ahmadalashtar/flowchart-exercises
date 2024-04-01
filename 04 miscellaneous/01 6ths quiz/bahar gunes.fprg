@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ahmad"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-04-01 03:38:19 pm"/>
+        <attribute name="created" value="YWhtYWQ7QUhNQURQQzsyMDI0LTA0LTAxOzAzOjI4OjI3IHBtOzIzNDQ="/>
+        <attribute name="edited" value="YWhtYWQ7QUhNQURQQzsyMDI0LTA0LTAxOzAzOjM4OjE5IHBtOzE7MjQ1NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <declare name="count" type="Integer" array="False" size=""/>
+            <declare name="c" type="Integer" array="False" size=""/>
+            <declare name="d" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <if expression="a &gt;= b">
+                <then>
+                    <assign variable="count" expression="b"/>
+                </then>
+                <else>
+                    <assign variable="count" expression="a"/>
+                </else>
+            </if>
+            <assign variable="c" expression="a % count"/>
+            <assign variable="d" expression="b % count"/>
+            <while expression="c != 0 || d != 0">
+                <assign variable="count" expression="count-1"/>
+                <assign variable="c" expression="a % count"/>
+                <assign variable="d" expression="b % count"/>
+            </while>
+            <output expression="count" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

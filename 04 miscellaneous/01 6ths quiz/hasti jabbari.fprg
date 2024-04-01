@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ahmad"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-04-01 03:44:19 pm"/>
+        <attribute name="created" value="YWhtYWQ7QUhNQURQQzsyMDI0LTA0LTAxOzAzOjM4OjIzIHBtOzIzNDE="/>
+        <attribute name="edited" value="YWhtYWQ7QUhNQURQQzsyMDI0LTA0LTAxOzAzOjQ0OjE5IHBtOzE7MjQ1MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N1" type="Integer" array="False" size=""/>
+            <declare name="N2" type="Integer" array="False" size=""/>
+            <declare name="gcd" type="Integer" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <input variable="N1"/>
+            <input variable="N2"/>
+            <assign variable="gcd" expression="1"/>
+            <assign variable="i" expression="2"/>
+            <while expression="i&lt;=N1 &amp;&amp; i &lt;= N2">
+                <if expression="N1%i == 0 &amp;&amp; N2 % i == 0">
+                    <then>
+                        <assign variable="gcd" expression="i"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <output expression="gcd" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ahmad"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-04-01 03:51:09 pm"/>
+        <attribute name="created" value="YWhtYWQ7QUhNQURQQzsyMDI0LTA0LTAxOzAzOjQ2OjQwIHBtOzIzMzk="/>
+        <attribute name="edited" value="YWhtYWQ7QUhNQURQQzsyMDI0LTA0LTAxOzAzOjUxOjA5IHBtOzE7MjQ0OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <declare name="gcd" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <while expression="a &lt; 1 || b &lt; 1">
+                <input variable="a"/>
+                <input variable="b"/>
+            </while>
+            <if expression="a &lt; b">
+                <then>
+                    <assign variable="gcd" expression="a"/>
+                </then>
+                <else>
+                    <assign variable="gcd" expression="b"/>
+                </else>
+            </if>
+            <while expression="a% gcd != 0 or b%gcd != 0">
+                <assign variable="gcd" expression="gcd-1"/>
+            </while>
+            <output expression="gcd" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
